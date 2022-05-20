@@ -39,7 +39,7 @@ app.post('/insertar', (req, res)=>{
 	db.settings({
       timestampsInSnapshots: true
     });
-    db.collection('Valores').add({
+    db.collection('Registros').add({
       Humedad: req.body.Humedad,
       fecha: new Date()
     });
