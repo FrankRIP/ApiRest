@@ -44,9 +44,7 @@ app.post('/insertar', (req, res)=>{
       fecha: new Date()
     });
     res.send({
-      icalor: req.body.icalor,
-      iruido: req.body.iruido,
-      igas: req.body.igas,
+      Humedad: req.body.Humedad,
       fecha: new Date(),
       status: 'Valores insertados!'
   })
@@ -56,3 +54,4 @@ app.post('/insertar', (req, res)=>{
 app.listen(PORT, () => {
   console.log(`escuchando en puerto ${ PORT }`)
 })
+
