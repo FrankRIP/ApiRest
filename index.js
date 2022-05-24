@@ -41,11 +41,11 @@ app.post('/insertar', (req, res)=>{
     });
     db.collection('Registros').add({
       Humedad: req.body.Humedad,
-      fecha: new Date()
+      Fecha: new Date()
     });
     res.send({
       Humedad: req.body.Humedad,
-      fecha: new Date(),
+      Fecha: new Date(),
       status: 'Valores insertados!'
   })
 })
